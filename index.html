@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<style>
+    #ui{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #ui div{
+        width: 31.3333%;
+        text-align: center;
+        margin: 12px;
+        border: 2px solid black;
+        overflow: hidden;
+    }
+    @media (max-width:770px) {
+        #ui div {
+            width: 100%;
+        }
+    }
+    /* .btns{
+        display: flex;
+        justify-content: space-around;
+    } */
+</style>
+<body>
+    <div class="container">
+        <form>
+            <div class="col-md-4 col-12 mx-auto border border-3 border-secondary p-4 shodow my-5 rounded-2">
+                <h1 class="text-capitalize text-center mb-5">enter your <br> prodcut details</h2>  
+                <input type="url" placeholder="url" id="img" class="d-block my-3 col-12 border-end-0 border-start-0 border-top-0 border-info text-capitalize">
+                <input type="text" placeholder="title" id="title" class="d-block my-3 col-12 border-end-0 border-start-0 border-top-0 border-info text-capitalize">
+                <input type="number" placeholder="price" id="price" class="d-block my-3 col-12 border-end-0 border-start-0 border-top-0 border-info text-capitalize">
+                <input type="text" placeholder="category" id="category" class="d-block my-3 col-12 border-end-0 border-start-0 border-top-0 border-info text-capitalize">
+                <input type="submit" class="col-12 btn btn-info fw-semibold">
+            </div>
+        </form>
+        <hr>
+            <div id="btns">
+                <button id="lth" class="me-4 btn btn-info py-2 px-5">low to high</button>
+                <button id="htl" class="btn btn-info py-2 px-5">high to low</button>
+                <div class="input-group my-3 mt-5">
+                    <input type="text" id="value" class=" text-capitalize border-secondary  px-5 py-2 border-info " placeholder="search the prodcut">
+                    <button id="search" class="btn btn-info text-capitalize px-4">search</button>
+                </div>
+            </div>
+        <div class="bg  border  border-4 border-secondary py-5 rounded-2 mt-5" >
+            <h1 class="text-center pb-5 display-3 fw-semibold">Products</h1>
+            <div id="ui">
+            </div> 
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
